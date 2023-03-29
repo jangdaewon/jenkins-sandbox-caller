@@ -1,8 +1,8 @@
 pipeline {
     agent none
     parameters {
-        string(name : 'MY_STRING', defaultValue : 'This is My String Value', description : '')
-        string(name : 'YOUR_STRING', defaultValue : 'This is Your String Value', description : '')
+        string(name : 'MY_STRING', defaultValue : 'This is My String Value from Caller', description : '')
+        string(name : 'YOUR_STRING', defaultValue : 'This is Your String Value from Caller', description : '')
     }
     stages{
         stage('Call Another Job with Parameters') {
