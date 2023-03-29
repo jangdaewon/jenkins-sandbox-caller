@@ -1,5 +1,5 @@
 pipeline {
-    agent none
+    agent any
     stages{
         stage('Call Another Job with Parameters') {
             steps{ 
