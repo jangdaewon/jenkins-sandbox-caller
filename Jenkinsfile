@@ -7,6 +7,7 @@ pipeline {
     stages{
         stage('Call Another Job with Parameters') {
             steps{ 
+                echo 'DDDDDDDDDDDDDDD'
                 build job : 'sandbox-callee', parameters: [
                     string(name: 'MY_STRING', value: "${params.MY_STRING}"),
                     string(name : 'YOUR_STRING', value : "${params.YOUR_STRING}")]
